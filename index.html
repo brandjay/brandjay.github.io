@@ -29,7 +29,59 @@
           font-size: 3.5rem;
         }
       }
-    
+      body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.card p {
+    color: #666;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    .card {
+        max-width: 100%;
+    }
+}
+
     </style>
 
     
@@ -50,64 +102,72 @@
 
   <main class="px-3">
     <h3 class="lead">I specialize in:
-      <ul>
-        <li>Crafting stunning websites</li>
-        <li>PC repair and Virus removal</li>
-        <li>Expert installation services for Linux and Windows operating systems on servers
-        </li>
-        <li>Network cable installation and creation services.
-        </li>
-      </ul>  
+
+      <div class="card-container">
+        <div class="card">
+            <h3>Crafting stunning websites</h3>
+            <p>We create beautiful and functional websites tailored to your needs.</p>
+            <h2 style="color: black;">
+              Websites > <a href="https://brandjay.github.io/entrustedgraceministries/">Entrusted Grace Ministries</a>
+               <br>
+               <a href="styles.html">Morgans Styles</a>
+             </h2>
+        </div>
+        <div class="card">
+            <h3>Computer building</h3>
+            <p>Custom-built computers to meet your specific requirements and preferences.</p>
+        </div>
+        <div class="card">
+            <h3>PC repair and Virus removal</h3>
+            <p>Expert repair services and virus removal to keep your PC running smoothly.</p>
+        </div>
+        <div class="card">
+            <h3>Expert installation services for Linux and Windows operating systems on servers</h3>
+            <p>Professional installation of Linux and Windows OS on your servers.</p>
+        </div>
+        <div class="card">
+            <h3>Network cable installation and creation services</h3>
+            <p>Reliable network cabling services to ensure optimal connectivity.</p>
+        </div>
+    </div>
+
+
       <br>
       Certifications:
       
       MTA certified in Windows Server 2016, Windows OS, Network Fundamentals, and Security Fundamentals
       Get in touch today to discuss your project!</h3>
+      <a class="btn btn-outline-primary" href="Contact.html" role="button">Contact Me</a>
      <h3 class="lead">
     </p>
     <br>
-    <div class="row">
-      <div class="card" style="background-color: rgb(209, 205, 205);">
-        <div class="card-body">
-          <h2 style="color: black;">
-           Websites > <a href="https://brandjay.github.io/entrustedgraceministries/">Entrusted Grace Ministries</a>
-            <br>
-            <a href="styles.html">Morgans Styles</a>
-          </h2>
-        </div>
-      </div>
-    </div>
   </main>
   <br>
 
   <!--Cable making-->
   <div class="container">
     <div class="row">
-      <div class="col-md">
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="RJ45.jpg" alt="Card image cap">
-          <div class="card-body">
-          <h5 class="card-title">Cable testing & Ensured to work</h5>
-          
-          </div>
-          </div>
-      </div>
-
-      <div class="col-md">
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="RJ451.jpg" alt="Card image cap">
-          <div class="card-body">
-          <h5 class="card-title">Professionally made</h5>
-          </div>
-      </div>
-      </div>
-
-
+        <div class="col-md-6">
+            <div class="card">
+                <img class="card-img-top" src="RJ45.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Cable testing & Ensured to work</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <img class="card-img-top" src="RJ451.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Professionally made</h5>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+</div>
   <!--End of cable making-->
  <div class="contact-form">
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc5eSU0FblqNJJ8zwzi0OrUNcmLZK8ihLgRB3g5nW8pBzOKIQ/viewform?embedded=true" width="100%" height="650" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> 
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc5eSU0FblqNJJ8zwzi0OrUNcmLZK8ihLgRB3g5nW8pBzOKIQ/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> 
 
   <footer class="mt-auto text-black-50">
     Morgans IT Services
